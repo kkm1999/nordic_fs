@@ -1,0 +1,24 @@
+{
+  "name": "nordic_fs",
+  "version": "0.0.1",
+  "description": "react js training",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kkm1999/nordic_fs.git"
+  },
+  "keywords": [
+    "react",
+    "javascript",
+    "html"
+  ],
+  "author": "Kishor Mandal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kkm1999/nordic_fs/issues"
+  },
+  "homepage": "https://github.com/kkm1999/nordic_fs#readme"
+}
