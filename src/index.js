@@ -5,6 +5,7 @@ const obj = {
   b: 2,
 };
 
+const greet = name => `hello ${name}`;
 
 class Animal {
   makeSound() {
