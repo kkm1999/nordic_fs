@@ -4,7 +4,8 @@
   "description": "react js training",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,18 @@
   "bugs": {
     "url": "https://github.com/kkm1999/nordic_fs/issues"
   },
-  "homepage": "https://github.com/kkm1999/nordic_fs#readme"
+  "homepage": "https://github.com/kkm1999/nordic_fs#readme",
+  "dependencies": {
+    "date-fns": "^2.29.3"
+  },
+  "devDependencies": {
+    "eslint": "^8.27.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-react": "^7.31.10",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^4.10.0"
+  }
 }
