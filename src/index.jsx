@@ -1,7 +1,10 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
+import App from './app1';
 
 const container = document.getElementById('root');
 const root = createRoot(container);
 
-root.render(<h1>Hello React?</h1>);
+root.render(
+  <App />,
+);
