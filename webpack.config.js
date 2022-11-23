@@ -11,7 +11,6 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx', '.json'],
   },
-
   module: {
     rules: [
       {
@@ -30,6 +29,5 @@ module.exports = {
   devServer: {
     port: 3000,
     open: true,
-  }, 
-
+  },
 };
