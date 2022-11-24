@@ -9,28 +9,32 @@ export default class App extends Component {
     };
   }
 
+  increment = () => {
+    this.setState(({ counter }) => ({
+      counter: counter + 1,
+    }));
+  };
+
+  decrement = () => {
+    this.setState(({ counter }) => ({
+      counter: counter - 1,
+    }));
+  };
+
   render() {
     const { counter } = this.state;
     return (
       <div>
         <button
           type="button"
-          onClick={() => {
-            this.setState(({ counter }) => ({
-              counter: counter + 1,
-            }));
-          }}
+          onClick={this.increment}
         >
           +
         </button>
         <p>{counter}</p>
         <button
           type="button"
-          onClick={() => {
-            this.setState(({ counter }) => ({
-              counter: counter - 1,
-            }));
-          }}
+          onClick={this.decrement}
         >
           -
         </button>
