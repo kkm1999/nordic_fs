@@ -1,7 +1,4 @@
-// modules.exports = {
-//   counter,
-// };
-import React from 'react';
+import React, { Component } from 'react';
 
 // Mouting
 // 1. constructor
@@ -71,7 +68,7 @@ export default class App extends Component {
 
     const { counter, greet, todoItem } = this.state;
     return (
-      <><div>
+      <div>
         <h1 id="heading">{greet}</h1>
         <h2>{todoItem?.title}</h2>
         <button type="button" onClick={this.increment}>
@@ -81,11 +78,7 @@ export default class App extends Component {
         <button type="button" onClick={this.decrement}>
           -
         </button>
-      </div><div>
-          <input type="checkbox" />
-        </div></>
-    </>
-  );
+      </div>
+    );
+  }
 }
-
-export default App;
