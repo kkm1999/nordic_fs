@@ -9,7 +9,7 @@ import Child2 from './child2';
 
 // updating
 // getDerivedStateFromProps
-// shouldComponentUpdate
+// shouldComponentUpdate or Purecomponent
 // render
 // getSnapshotBeforeUpdate
 // componentDidUpdate

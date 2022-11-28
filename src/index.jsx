@@ -10,4 +10,4 @@ const greetMessage = 'Hola';
 App.getDerivedStateFromProps = (nextProps, prevState) => ({
   greet: `${greetMessage} ${nextProps.name}`,
 });
-root.render(<App name="yagnesh" />);
+root.render(<App name="Kishor" />);
