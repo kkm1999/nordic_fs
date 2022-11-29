@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
-import Child1 from './child1';
-import Child2 from './child2';
+
+// create a component which has two child component
+// and each child component has click evnt.
+
+// if any error occurs during this click we have to handle this on parent component
+
 export default class Index extends Component {
   constructor(props) {
     super(props);
@@ -27,18 +31,10 @@ export default class Index extends Component {
 
   render() {
     return (
-    <div>
-      <h1 id="heading">{greet}</h1>
-    <h2>{todoItem?.title}</h2>
-    <button type="button" onClick={this.increment}>
-      +
-    </button>
-    <p>{counter}</p>
-    <button type="button" onClick={this.decrement}>
-      -
-    </button>
-    {counter < 10 && <Child1 counter={counter} />}
-    <Child2 /></div>);
+      <div>
+        <h1 className="text-red-400 text-3xl">Index</h1>
+      </div>
+    );
   }
 }
 }
