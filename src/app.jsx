@@ -9,19 +9,11 @@ import Child2 from './child2';
 // 4. componentDidMount
 
 // updating
-<<<<<<< HEAD
-// getDerivedStateFromProps
-// shouldComponentUpdate or Purecomponent
-// render
-// getSnapshotBeforeUpdate
-// componentDidUpdate
-=======
 // 1. getDerivedStateFromProps
 // 2. shouldComponentUpdate
 // 3. render
 // 4. getSnapshotBeforeUpdate
 // 5. componentDidUpdate
->>>>>>> upstream/react
 
 // unmounting
 // 1. componentWillUnmount
@@ -157,13 +149,9 @@ export default class App extends Component {
       </div>
     );
   }
-<<<<<<< HEAD
-}
-=======
 }
 
 // create a component which has two child component
 // and each child component has click evnt.
 
 // if any error occurs during this click we have to handle this on parent component
->>>>>>> upstream/react
