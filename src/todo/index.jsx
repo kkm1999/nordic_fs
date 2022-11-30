@@ -6,28 +6,7 @@ import React, { Component } from 'react';
 // if any error occurs during this click we have to handle this on parent component
 
 export default class Index extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      counter: 0,
-      todoItem: null,
-      
-    };
-
-
-  increment = () => {
-    this.setState(({ counter }) => ({
-      counter: counter + 1,
-    }));
-  };
-
-  decrement = () => {
-    this.setState(({ counter }) => ({
-      counter: counter - 1,
-    }));
-  };
-
+  state = {};
 
   render() {
     return (
@@ -36,5 +15,4 @@ export default class Index extends Component {
       </div>
     );
   }
-}
 }
