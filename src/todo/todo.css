@@ -1,5 +1,6 @@
 .wrapper {
   @apply flex flex-col items-center h-screen;
+  @apply bg-emerald-50	;
 }
 
 .heading {
