@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component,createRef } from 'react';
 import './todo.css';
 
 // create a component which has two child component
@@ -7,7 +7,7 @@ import './todo.css';
 // if any error occurs during this click we have to handle this on parent component
 
 export default class Index extends Component {
-  state = { todoText: '', todoList: [], filterType: 'all' };
+  state = { todoList: [], filterType: 'all' };
 
   filterbtn = [
     {
@@ -25,19 +25,31 @@ export default class Index extends Component {
     },
   ];
 
-  changeTodoText = (event) => {
+  /* changeTodoText = (event) => {
     // console.log(event.target.value);
     this.setState({ todoText: event.target.value });
-  };
+  }; */
 
   addTodo = (event) => {
-    event.preventDefault();
-    this.setState(({ todoList, todoText }) => ({
-      todoList: [...todoList, { id: new Date().valueOf(), text: todoText }],
-      todoText: '',
-    }));
+    try {
+      event.preventDefault();
+      this.setState(
+        ({ todoList }) => ({
+          todoList: [...todoList, {
+            id: new Date().valueOf(),
+            text: InputTextRef.current.value,
+            isDone: false,
+          },
+          ],
+          
+        }),
+        () => {
+          this.InputTextRef.value = ' ';
+        },
+      );
+    } catch (error) {
 
-    console.log('hello');
+    }
   };
 
   deleteTodo = (item) => {
@@ -67,7 +79,7 @@ export default class Index extends Component {
   };
 
   render() {
-    const { todoText, todoList, filterType } = this.state;
+    const { todoList, filterType } = this.state;
     return (
       <div className="wrapper">
         <h1 className="heading">Todo App</h1>
@@ -75,8 +87,8 @@ export default class Index extends Component {
           <input
             type="text"
             className="rounded-l-md"
-            value={todoText}
-            onChange={this.changeTodoText}
+            ref={this.createRef()}
+          //  onChange={this.changeTodoText}
           />
           <button type="submit" className="btn rounded-l-none">
             Add Todo
