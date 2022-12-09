@@ -39,7 +39,7 @@ export default class Index extends Component {
     } catch (error) {}
   };
 
-  addTodo = async event => {
+  addTodo = async (event) => {
     try {
       event.preventDefault();
 
@@ -63,12 +63,12 @@ export default class Index extends Component {
         }),
         () => {
           this.intputTextRef.current.value = '';
-        }
+        },
       );
     } catch (error) {}
   };
 
-  toggleComplete = async item => {
+  toggleComplete = async (item) => {
     try {
       const res = await fetch(`http://localhost:3000/todoList/${item.id}`, {
         method: 'PUT',
@@ -82,7 +82,7 @@ export default class Index extends Component {
       const json = await res.json();
 
       this.setState(({ todoList }) => {
-        const index = todoList.findIndex(x => x.id === item.id);
+        const index = todoList.findIndex((x) => x.id === item.id);
         return {
           todoList: [
             ...todoList.slice(0, index),
@@ -94,14 +94,14 @@ export default class Index extends Component {
     } catch (error) {}
   };
 
-  deleteTodo = async item => {
+  deleteTodo = async (item) => {
     try {
       await fetch(`http://localhost:3000/todoList/${item.id}`, {
         method: 'DELETE',
       });
 
       this.setState(({ todoList }) => {
-        const index = todoList.findIndex(x => x.id === item.id);
+        const index = todoList.findIndex((x) => x.id === item.id);
         return {
           todoList: [...todoList.slice(0, index), ...todoList.slice(index + 1)],
         };
@@ -127,7 +127,7 @@ export default class Index extends Component {
         </form>
         <div className="w-full flex-1">
           {todoList
-            .filter(x => {
+            .filter((x) => {
               switch (filterType) {
                 case 'pending':
                   return !x.isDone;
@@ -139,7 +139,7 @@ export default class Index extends Component {
                   return true;
               }
             })
-            .map(item => (
+            .map((item) => (
               <div key={item.id} className="flex items-center m-4">
                 <input
                   type="checkbox"
@@ -158,7 +158,7 @@ export default class Index extends Component {
             ))}
         </div>
         <div className="w-full flex">
-          {this.filterBtns.map(x => (
+          {this.filterBtns.map((x) => (
             <button
               key={x.key}
               type="button"

@@ -1,4 +1,19 @@
 {
-    "todoList": []
-  }
-  
+  "todoList": [
+    {
+      "text": "cd",
+      "isDone": false,
+      "id": 1
+    },
+    {
+      "text": "bffje",
+      "isDone": true,
+      "id": 5
+    },
+    {
+      "text": "b",
+      "isDone": false,
+      "id": 6
+    }
+  ]
+}
