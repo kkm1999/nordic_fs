@@ -6,16 +6,6 @@
       "id": 1
     },
     {
-      "text": "bffje",
-      "isDone": true,
-      "id": 2
-    },
-    {
-      "text": "asdfasd",
-      "isDone": true,
-      "id": 4
-    },
-    {
       "text": "asdf",
       "isDone": true,
       "id": 6
@@ -29,6 +19,11 @@
       "text": "asdfadsf",
       "isDone": false,
       "id": 8
+    },
+    {
+      "text": "fh",
+      "isDone": false,
+      "id": 9
     }
   ]
 }
