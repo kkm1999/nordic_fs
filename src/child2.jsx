@@ -1,14 +1,20 @@
-import React from 'react';
-import shallowCompare from 'react-addons-shallow-compare';
+import React, { useEffect } from 'react';
 
+function Child2() {
+  useEffect(() => {
+    const mouseMove = () => {
+      console.log('mouse moved...');
+    };
 
-const Child2 = () => {
-  shouldComponentUpdate(nextProps, nextState) {
-    return shallowCompare(this.nextProps,nextState);
+    document.addEventListener('mousemove', mouseMove);
 
-  }
-  console.log('child 2 render');
+    // component will unmount
+    return () => {
+      document.removeEventListener('mousemove', mouseMove);
+    };
+  }, []);
+
   return <div>Child2</div>;
-};
+}
 
 export default Child2;
