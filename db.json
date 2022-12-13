@@ -24,16 +24,6 @@
       "text": "asdfadsf",
       "isDone": false,
       "id": 9
-    },
-    {
-      "text": "hello",
-      "isDone": false,
-      "id": 10
-    },
-    {
-      "text": "asfadsf",
-      "isDone": true,
-      "id": 11
     }
   ]
 }

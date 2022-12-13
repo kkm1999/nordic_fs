@@ -1,4 +1,4 @@
-import React, { createRef, PureComponent } from 'react';
+import React, { createRef, PureComponent ,useState} from 'react';
 import './todo.css';
 import TodoFilter from './todoFilter';
 import TodoForm from './todoForm';
@@ -9,7 +9,8 @@ import TodoList from './todoList';
 
 // if any error occurs during this click we have to handle this on parent component
 
-export default class Index extends PureComponent {
+/* export default class Index extends PureComponent {
+
   filterBtns = [
     {
       name: 'All',
@@ -169,3 +170,30 @@ export default class Index extends PureComponent {
     );
   }
 }
+*/
+function Xyz() {
+  const[counter,setCounter]=useState(0);
+
+  const increment = ()=>{
+    setCounter(value=>value+1);
+  }
+  const decrement=()=>{
+    setCounter(value=>value-1);
+  }
+
+  return (
+    <div>
+      <button type="button"
+      onClick={increment}>
+       +
+      </button>
+      {counter}
+      <button type="button"
+      onClick={decrement}>
+       -
+      </button>
+    </div>
+  )
+}
+
+export default Xyz
