@@ -1,8 +1,14 @@
 {
   "todoList": [
     {
-      "text": "asdf",
+      "text": "asdfa",
+      "isDone": false,
+      "id": 1
+    },
+    {
+      "text": "asdfds",
       "isDone": true,
+<<<<<<< HEAD
       "id": 6
     },
     {
@@ -34,6 +40,14 @@
       "text": "jwf",
       "isDone": false,
       "id": 14
+=======
+      "id": 2
+    },
+    {
+      "text": "added through reducer",
+      "isDone": false,
+      "id": 4
+>>>>>>> upstream/react
     }
   ]
 }
