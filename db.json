@@ -8,13 +8,7 @@
     {
       "text": "asdfds",
       "isDone": true,
-<<<<<<< HEAD
       "id": 6
-    },
-    {
-      "text": "asdfadsf",
-      "isDone": false,
-      "id": 9
     },
     {
       "text": "hook",
@@ -40,14 +34,21 @@
       "text": "jwf",
       "isDone": false,
       "id": 14
-=======
-      "id": 2
     },
     {
-      "text": "added through reducer",
+      "text": "hh",
       "isDone": false,
-      "id": 4
->>>>>>> upstream/react
+      "id": 15
+    },
+    {
+      "text": "hg",
+      "isDone": false,
+      "id": 16
+    },
+    {
+      "text": "jbj",
+      "isDone": false,
+      "id": 17
     }
   ]
 }
