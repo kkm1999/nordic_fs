@@ -16,24 +16,9 @@
       "id": 13
     },
     {
-      "text": "jwf",
-      "isDone": false,
-      "id": 14
-    },
-    {
-      "text": "hh",
+      "text": "added through reducer",
       "isDone": true,
-      "id": 15
-    },
-    {
-      "text": "hg",
-      "isDone": false,
-      "id": 16
-    },
-    {
-      "text": "jbj",
-      "isDone": false,
-      "id": 17
+      "id": 4
     }
   ]
 }
