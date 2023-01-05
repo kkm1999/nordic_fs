@@ -83,7 +83,6 @@ function Register() {
         age: '',
       }}
       onSubmit={async values => {
-        console.log(values);
         await wait(5000);
       }}
       validate={values => {
